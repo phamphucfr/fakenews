@@ -1,0 +1,184 @@
+*{
+	padding:0px; 
+	margin:0px;;
+}
+
+/*on centre le site. le body>div c'est le div directement enfant de body, le tout premier après <body>  */
+
+#global{
+        display: block;
+        width: 1200px;
+        margin:auto;
+}
+
+header{
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+	border-radius: 4px;
+}
+
+footer{
+	padding: 5px;
+	text-align: center;
+        width: 100%;
+        margin-top: 20px;
+	min-height: 10px;
+        margin-bottom: 10px;
+	background-color: #B9DCF3 ;
+        color: #238ae5;
+	border-radius: 4px;
+}
+
+#menu-vertical-gauche {
+      position: sticky;
+      margin: auto;
+      top: 0;
+      margin-top: 0px;
+      flex: 0 0 150px;
+      padding: 14px;
+      background-color: #B9DCF3 ;
+      border-radius: 4px;
+}
+
+#menu-vertical-gauche a{ 
+        top:0;
+        padding:7px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        display: block;
+        color: #238ae5;
+        background-color:#EFF4F7;
+        font-size: 1.1em;
+        border-radius: 4px;
+}
+
+
+#menu-vertical-gauche a:hover , #menu-vertical-gauche a.selected {
+
+        filter: drop-shadow(4px 4px 2px #444);
+        background-color: white;
+        font-weight: bolder;
+}
+
+
+#menu-vertical-droite {
+      position: sticky;
+      margin: auto;
+      margin-top: 0px;
+      flex: 0 0 150px;
+      padding: 10px;
+      top: 0;
+      background-color: #B9DCF3 ;
+      border-radius: 4px;
+}
+
+#menu-vertical-droite a{
+        display: inline-block;
+        padding:2px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        color: #238ae5;
+        background-color:#EFF4F7;
+        font-size: 0.9em;
+        border-radius: 2px;
+}
+
+#menu-vertical-droite a:link, header a:link, .preview_article a:link, .preview_image a:link, #menu-vertical-gauche a:link
+{
+        text-decoration:none;
+}
+
+#menu-vertical-droite a:hover, #menu-vertical-droite a.selected {
+        /*filter: drop-shadow(4px 4px 2px #444);*/
+        background-color: white;
+        font-weight: bold;
+}
+
+
+#contenu{
+        top:0;
+        margin-top: 0px;
+        padding: 10px;
+	margin-bottom: 20px;
+	min-height:400px;
+        flex: 0 0 67%;
+}
+
+.image {
+    margin: auto;
+    max-height: 300px;
+    max-width: 600px;
+}
+
+.tagsActu{
+    color: #238ae5;
+    text-decoration:none;
+    
+}
+
+
+h1{
+    text-align: center;
+    font-size: 1em;
+}
+
+table{
+    display: block;
+    width: 100%;
+    align-items: flex-start;
+}
+
+caption{
+    font-size: 1em;
+    color:red;
+    margin: auto;
+    caption-side: top;
+}
+
+tr{
+    display: flex;
+    width: 100%;
+}
+
+td{
+    padding:5px; 
+    display: block;
+    margin-bottom: 25px;
+} 
+
+.preview_image{
+    flex: 0 0 150px;
+    max-height: 150px;
+}
+
+.preview_image img{
+    max-height: 140px;
+    width: 140px;
+}
+
+.preview_article{
+    padding: 4px;
+    margin-top: 0px;
+    margin-left: 5px;
+    color: black;
+    flex: 1;
+    min-width: 360px;
+}
+
+
+.titre_article{
+    font-weight: bold;
+    color: #238ae5;
+}
+
+@media (max-width: 640px) {
+        footer{
+                position: absolute;
+                margin-bottom: 0px;
+                width: 600px;
+                margin: auto;
+        }
+}
+        
+
